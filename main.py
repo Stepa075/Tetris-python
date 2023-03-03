@@ -1,3 +1,5 @@
+import sys
+
 import pygame
 from copy import deepcopy
 from random import choice, randrange
@@ -83,7 +85,7 @@ while True:
     # control
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            exit()
+            sys.exit()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 dx = -1
